@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <link rel="stylesheet" href="E:/OfficeWorks/WinterWands/style.css">
+</head>
+<body>
+
+   <div class="navbar">
+  <!-- Navbar content goes here -->
+  <!-- You can add your logo or brand name if needed -->
+  <div class="navbar-logo">
+    <!-- Your logo or brand name -->
+    WinterWands
+  </div>
+      <div class="navbar-buttons">
+      <button onclick="location.href='careers.html';">Careers</button>
+      <button onclick="location.href='signup.html';">Projects</button>
+	  <button onclick="location.href='signup.html';">About Us</button>	  
+	  <button onclick="location.href='signin.html';">Login</button>
+    </div>
+</div>
+
+  <div class="login-container">
+    <h1>Create an Account</h1>
+    <form action="/signupform" method="post" th:object="${user}">
+	  <input type="text" placeholder="Full Name" th:field="*{fullname}" th:required="true">
+	  <input type="text" placeholder="Email" th:field="*{Email}" th:required="true">     
+      <input type="password" placeholder="password" th:field="*{password}" th:required="true">
+	  <!--<input type="tel" placeholder="mobile no" th:field="*{mobile}" th:required="true">-->
+      <!--<input type="date" placeholder="DOB" th:field="*{DOB}" th:required="true">-->
+      <button type="submit" class="login-button">Create Account</button>
+    </form>
+    <div class="create-account">
+      <p>Already have an account? <a th:href="@{/login}">Sign in</a>.</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+  <!-- Footer content goes here -->
+  <!-- You can add links, copyright information, etc. -->
+  <span>copyright &copy; 2024 WinterWands</span>
+  <a href="#">Help Center</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">India</a>
+  <a href="#">Terms</a>
+</div>
+
+</body>
+</html>

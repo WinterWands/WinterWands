@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NjordHextor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f8fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #fff;
+      padding: 20px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between; /* Add this to align items */
+      align-items: center; /* Add this to align items */
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 6px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      margin: 50px auto;
+      flex-grow: 1;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-weight: 400;
+      color: #24292e;
+    }
+
+    input {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    input:focus {
+      border-color: #ffa500; /* Change border color when input is focused */
+      outline: none; /* Remove default focus outline */
+    }
+
+    .login-button {
+      background-color: #586069;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 95%;
+    }
+
+    .login-button:hover {
+      background-color: #586069;
+    }
+
+    .create-account {
+      margin-top: 20px;
+      color: #586069;
+    }
+
+    .create-account a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    .footer {
+      background-color: #fff;
+      padding: 20px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      margin-top: auto;
+    }
+
+    /* Style for the buttons */
+    .navbar-buttons button {
+      background-color: #586069;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-left: 10px; /* Add margin between buttons */
+    }
+
+    .navbar-buttons button:hover {
+      background-color: #34495e; /* Change hover color */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <!-- Navbar content goes here -->
+    <!-- You can add your logo or brand name if needed -->
+    <div class="navbar-logo">
+      <!-- Your logo or brand name -->
+    </div>
+    <div class="navbar-buttons">
+      <button onclick="location.href='#';">Login</button>
+      <button onclick="location.href='signup.html';">Sign Up</button>
+    </div>
+  </div>
+
+  <div class="login-container">
+    <h1>Sign in</h1>
+    <form action="#" method="post">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <button type="submit" class="login-button">Sign in</button>
+    </form>
+    <div class="create-account">
+      <p>New to Wages? <a href="signup.html">Create an account</a>.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <!-- Footer content goes here -->
+    <!-- You can add links, copyright information, etc. -->
+  </div>
+
+</body>
+</html>
